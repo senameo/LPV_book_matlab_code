@@ -1,0 +1,55 @@
+%% example 3.1 (Chapter 3) 
+% LPV Robust state feedback control
+% O. Sename 
+% % Jan 2025
+clear all
+clc
+close all
+%% 
+% LPV system definition
+%  A = [0 1; -rho^2, 2*rho];
+B = [0; 1];
+C = [1 0];
+%% 
+% Systems at the vertices of the polytope
+% Scheduling parameter 
+rho_min=1;
+rho_max=10;
+% Scheduling parameter for the polytopic system :  rho1=rho, rho2=rho^2
+rho1_min=rho_min;
+rho1_max=rho_max;
+rho2_min=rho_min^2;
+rho2_max=rho_max^2;
+
+A1 = [0 1; -rho2_min, 2*rho1_min];
+A2 = [0 1; -rho2_max, 2*rho1_min];
+A3 = [0 1; -rho2_min, 2*rho1_max];
+A4 = [0 1; -rho2_max, 2*rho1_max];
+
+P1=ss(A1,[B],C,[0]);
+P2=ss(A2,[B],C,[0]);
+P3=ss(A3,[B],C,[0]);
+P4=ss(A4,[B],C,[0]);
+%%
+% State feedback design
+nstate=2;
+ncon=1;
+drate=1;
+[Frob,X] = lmiHinfStateFeedbackRobust_expstab({P1,P2,P3,P4},nstate,ncon,drate,'sedumi')
+%%
+% verfication of closed-loop stability
+disp('closed-loop poles ate the vertices of the polytope')
+eigA1=eig(A1+B*Frob)
+eigA2=eig(A2+B*Frob)
+eigA3=eig(A3+B*Frob)
+eigA4=eig(A4+B*Frob)
+figure
+  plot(real(eigA1(1)),imag(eigA1(1)),'x',real(eigA1(2)),imag(eigA1(2)),'+')
+  hold on
+  plot(real(eigA2(1)),imag(eigA2(1)),'x',real(eigA2(2)),imag(eigA2(2)),'+')
+  hold on
+  plot(real(eigA3(1)),imag(eigA3(1)),'x',real(eigA3(2)),imag(eigA3(2)),'+')
+  hold on
+  plot(real(eigA4(1)),imag(eigA4(1)),'x',real(eigA4(2)),imag(eigA4(2)),'+')
+  
+ 
