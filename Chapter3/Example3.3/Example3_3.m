@@ -29,7 +29,7 @@ end
 % It ensures that all poles= -rho, -rho 
 for i = 1:length(rho)
 listF{i}=[0,-4*rho(i)];
- EIGCL{i}=eig(listP{i}.a+listP{i}.b*listF2{i});
+ EIGCL{i}=eig(listP{i}.a+listP{i}.b*listF{i});
  plot(real(EIGCL{i}(1)),imag(EIGCL{i}(1)),'x',real(EIGCL{i}(2)),imag(EIGCL{i}(2)),'+')
  hold on
 end
@@ -38,6 +38,6 @@ end
 maxdrho=10;
 solver='sdpt3';
 for i = 1:length(rho)
-   listAcl{i}=listP{i}.a+listP{i}.b*listF2{i}; 
+   listAcl{i}=listP{i}.a+listP{i}.b*listF{i}; 
    end
-[X,X0,X1,X2] = LMI_ParameterDependentStability_grid(listAcl,rho,maxdrho,solver)
+[X,X0,X1,X2] = LMI_ParameterDependentStability_grid(listAcl,rho,maxdrho,solver);
