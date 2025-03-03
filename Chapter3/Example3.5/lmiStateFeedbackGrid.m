@@ -9,7 +9,7 @@
 %  xdot = [   A  Bw  Bu  ]  [x w u]^T
 %   z   =  [ Cz Dzw Dzu ]  [x w u]^T
 % and to input them as a list of systems
-% LMIs are with +/- MAP drho/dt
+% LMIs are with +/- MAX drho/dt
 %
 %  Input
 %  listGp : list of plants
@@ -39,7 +39,7 @@ sizeR = length(rho);
 
 %%% To tackle with some strict inequalities problems not well implemented 
 %%% in Yalmip
-epsi = 1e-15;
+epsi = 1e-10;
 
 %%% Shows vector lenght
 input  = [sizeP sizeW sizeU];
