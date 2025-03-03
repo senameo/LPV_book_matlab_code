@@ -1,1 +1,1 @@
-This repository contains the examples from my book.
+This repository contains some of the examples from my book.
