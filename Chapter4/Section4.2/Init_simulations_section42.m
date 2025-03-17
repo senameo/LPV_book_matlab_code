@@ -12,8 +12,11 @@ for i=1:2^N
 end
 E=1*B;
 
-%% Case 1
-scenario=1;
+%%
+scenario = input('Which scenario would you like to run: 1 or 2 ? Answer = ');
+
+switch scenario
+    case 1
 x0=[0;0];
 xk0=[0;0;0;0];
 ueq=0;
@@ -36,9 +39,7 @@ plot(u.time,u.signals.values),legend('uLPV','uLTI')
 figure
 plot(poly_coord.time,poly_coord.signals.values),title('polytopic coordoinates')
 
-%%
-% Case 2
-scenario=2;
+    case 2
 x0=[pi/2;-1];
 LTIcontoller=KLTI1;
 ueq=-x0(1)*x0(2);
@@ -61,3 +62,8 @@ plot(u.time,u.signals.values),legend('uLPV','uLTI')
 
 figure
 plot(poly_coord.time,poly_coord.signals.values),title('polytopic coordoinates')
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+    otherwise
+        disp('Choose 1 or 2')
+end
