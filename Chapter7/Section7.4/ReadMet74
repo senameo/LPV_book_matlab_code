@@ -1,0 +1,15 @@
+This directory contains Matlab and Simulink files to run the example provided in section 7.4 of Chapter7.
+The files to be considered are:
+%%
+model_flexiblesystem.mat
+State space models of the different flexible system
+%%
+Main: Section74.m  
+Contains the whole program
+%%
+%%
+lmiHinfPolytope.m
+Matlab function that computes the LPV / Hinf controller solving the LMI problem 
+%%
+Simulations_section74.slx
+Simulnik function that executes the silumaiton scenarios (the scenarios are chosen in the main file)
