@@ -3,8 +3,8 @@
 %
 %  [K,gopt,P,P0,P1,P2,Y0,Y1,Y2,CL]= lmiStateLMIeedbackGrid(listGp,rho,maxdrho,nmeas,ncon,sp,solver)
 % Description
-% LMIunction that compute the LPV / Hinf state feedback controller solving the LMI problem 
-% for a gridded LPV.
+% Function that computes the LPV / Hinf state feedback controller solving the LMI problem 
+% for a gridded LPV system.
 % To use this function one have to create the  generalized plant P st:
 %  xdot = [   A  Bw  Bu  ]  [x w u]^T
 %   z   =  [ Cz Dzw Dzu ]  [x w u]^T

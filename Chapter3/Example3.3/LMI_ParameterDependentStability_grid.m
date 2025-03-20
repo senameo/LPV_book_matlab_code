@@ -2,7 +2,8 @@
 % Jan 2025
 % 
 % Description
-% PDLF stability 
+% [P,P0,P1,P2] = LMI_ParameterDependentStability_grid(listA,rho,maxdrho,solver)
+% Function that checks the parameter dependent stability of an autonomous LPV system xdot=A(rho)x using a Parameter Depdendent Lyapunov Function 
 %  Input
 %  listA  : list of plant state matrices
 %  rho : gridded point

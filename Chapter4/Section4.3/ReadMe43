@@ -5,7 +5,7 @@ Main file: Section43.m
 It contains the modelling definition,and observer design solution
 %
 obs_LPV_pol_poleregion_hinf.m
-Function that compute an LPV polytopic observer with Hinfinity and pole
+Function that computes an LPV polytopic observer with Hinfinity and pole placement constraints (defined as LMI region)
 %
 Simulations_section43.slx
 Simulink files that runs the simulation
