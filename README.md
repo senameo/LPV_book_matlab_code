@@ -3,7 +3,7 @@ Linear Parameter-Varying Control: Theory and Application to Automotive Systems
 Published by John Wiley & Sons, Inc., Hoboken, New Jersey.
 ISBN: 9781394285952
 
-This book is accompanied by a companion website:
+This book is accompanied by a companion website:  
 www.wiley.com/go/sename/lpvcontrol
 The website includes GitHub Repository
 
