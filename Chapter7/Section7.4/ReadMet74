@@ -8,7 +8,7 @@ Main: Section74.m
 Contains the whole program
 %%
 %%
-lmiHinfPolytope.m
+Yalmip/lmiHinfPolytope.m
 Matlab function that computes the LPV / Hinf controller solving the LMI problem 
 %%
 Simulations_section74.slx

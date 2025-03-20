@@ -1,16 +1,50 @@
+% Author: Olivier Sename
+% Jan 2025
+%
+% [L,P,gamma_obs,VP]=obs_LPV_pol_poleregion_hinf(A,E,C,Cz,alpha,theta,r,solver)
+% Description
+% Function that computes an LPV polytopic observer with Hinfinity and pole
+% placement constraints (defined as LMI region)
+% To use this function one have to define the polytopic system st:
+%  xdot = [   A  Bw  Bu  ]  [x w u]^T
+%   y   =  [ C]  [x]^T
+%   z   =  [ Cz]  [x]^T  
+% wheer w is the external input, y the measured output and z the variable
+% to be estimated
+%
+% The objective is to find the observer gain L  (polytopic observer) such
+% that:
+% 1. the poles of the matrices Ai-LCi (i being the vertex i of the
+% polytopic system)  are in a cone defined by:
+%    - alpha : vertical exes in the LHP
+%    - theta : cone angle
+%    - r     : cone radius
+% 2. the L2 iduced gain of z/w is minimized 
+%
+%  Input
+%  A: list of state matrices
+%  E: list of external input matrices
+%  C: Measured output matrix y=C.x
+%  Cz: Performance output matrix z=Cz.x
+% 
+%  Output
+%  L  : gain of the polytopic observer 
+%  gamma_obs   : optimal gamma (L2 induced gain of z/w)
+%  P : constant Lyapunov matrice P that ensures quadratic stability of the
+%  estimation error
+% VP: eigencalues of the matrices Ai-LCi (i being the vertex i of the
+% polytopic system) 
+
+
 function [L,P,gamma_obs,VP]=obs_LPV_pol_poleregion_hinf(A,E,C,Cz,alpha,theta,r,solver)
 
-%  Cône défini par :
-%    - alpha : axe vertical
-%    - theta : angle du cône
-%    - r     : rayon
 epsi = 1e-10;
-[nx,nw] = size(E);
+[nx,nw] = size(E{1});
 [ny,nx] = size(C);
 [nz,nx] = size(Cz);
 nb_sommet = size(A,2);
-disp('check')
 
+disp('Definition of the decision variables')
 P  = sdpvar(nx,nx);
 for i=1:nb_sommet
     Y{i} = sdpvar(nx,ny,'full');
@@ -19,7 +53,6 @@ for i=1:nb_sommet
 end
 gamma = sdpvar(1,1,'full');%1;%
 
-
 LMIs = [P >= epsi];
 for i=1:nb_sommet
     LMIs = [LMIs, [A{i}'*P + P*A{i} - Y{i}*C - C'*Y{i}' + 2*alpha*P <= -epsi]];
@@ -27,7 +60,7 @@ for i=1:nb_sommet
     LMIs = [LMIs, [sin(theta)*(PA{i} + AtP{i}), cos(theta)*(PA{i} - AtP{i});...
         cos(theta)*(AtP{i} - PA{i}), sin(theta)*(PA{i} + AtP{i})] <= -epsi];
     M11{i}=A{i}'*P+P*A{i}' - Y{i}*C - C'*Y{i}'; 
-    M21{i}=E;
+    M21{i}=E{i};
     M31{i}=P*Cz';
     M32{i}=zeros(nw,nz);
     H1{i}  = [M11{i},M21{i},M31{i};
@@ -37,10 +70,7 @@ for i=1:nb_sommet
 end;
 
 ops = sdpsettings('solver',solver);
-% ops = sdpsettings('solver','sdpt3','verbose',0);
 optimize(LMIs,gamma,ops);
-%optimize(LMIs,[],ops);
-
 gamma_obs = double(gamma);
 
 for i=1:nb_sommet
@@ -66,7 +96,7 @@ for i=1:size(VP_P,1)
         disp('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
     elseif (VP_P(i) <= 1e-8)
         disp('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
-        disp('Warning : les VP de P sont très petites')
+        disp('Warning : les VP de P sont trï¿½s petites')
         disp('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
     end
 end

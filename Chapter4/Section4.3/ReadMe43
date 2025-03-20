@@ -1,0 +1,11 @@
+This directory contains the example detailed in section 4.3 of Chapter 4
+It concerns the observer design of a non linear system using an Hinf /LPV control approaach, through a polytopic formulation
+%
+Main file: Example_secion42.m
+It contains the modelling definition, control formulation and control solution
+%
+obs_LPV_pol_poleregion_hinf.m
+Function that compute an LPV polytopic observer with Hinfinity and pole
+%
+ThreeTanks_LPVobserver_simulation.slx
+Simulink files that runs the simulation
