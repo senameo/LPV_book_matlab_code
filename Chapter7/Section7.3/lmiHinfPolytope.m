@@ -1,7 +1,7 @@
 % Author: Charles Poussot-Vassal
 % 
 % Description
-% Function that compute the LPV / Hinf controller solving the LMI problem 
+% Function that computes the LPV / Hinf controller solving the LMI problem 
 % (see C. Scherer and S. Wieland) for a polytope.
 % To use this function one have to create the  generalized plant P st:
 %  Xdot    A  B1  B2    X

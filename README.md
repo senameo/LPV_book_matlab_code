@@ -3,9 +3,15 @@ Linear Parameter-Varying Control: Theory and Application to Automotive Systems
 Published by John Wiley & Sons, Inc., Hoboken, New Jersey.
 ISBN: 9781394285952
 
+<<<<<<< HEAD
 This book is accompanied by a companion website:
 www.wiley.com/go/sename/lpvcontrol  
 The website includes GitHub Repository  
+=======
+This book is accompanied by a companion website:  
+www.wiley.com/go/sename/lpvcontrol
+The website includes GitHub Repository
+>>>>>>> 639b6a08dd01eba475a2ec5d3bcd2465b6d8701c
 
 It is worth noting that a certain number of generic functions can be re-sued for stability analysis, obseerver and control design. To name a few:  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  

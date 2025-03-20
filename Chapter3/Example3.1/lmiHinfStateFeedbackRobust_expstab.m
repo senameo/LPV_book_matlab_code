@@ -1,8 +1,8 @@
 % Author: Olivier Sename
 % Jan 2025
 % Description
-% [F,X] = lmiHinfStateFeedbackRoB2st_expstab(listP,nstate,ncon,beta,solver)
-% Function that compute a robust state feedback controller for a polytopic system solving an LMI problem. 
+% [F,X] = lmiHinfStateFeedbackRobust_expstab(listP,nstate,ncon,beta,solver)
+% Function that computes a robust state feedback controller for a polytopic system solving an LMI problem. 
 % To use this function one have to create the polytopic plant models at
 % the vertices of the polytope
 % System matrices A, B2, C, D, given at the vertices of the polytope
@@ -19,7 +19,7 @@
 %  X: Lyapunov matrix 
 
 
-function [F,X] = lmiHinfStateFeedbackRoB2st_expstab(listP,nstate,ncon,beta,solver)
+function [F,X] = lmiHinfStateFeedbackRobust_expstab(listP,nstate,ncon,beta,solver)
 % Size of the generalized plant
 sizeX = size(listP{1}.a,1);
 sizeU = ncon;

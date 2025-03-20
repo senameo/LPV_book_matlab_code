@@ -4,7 +4,7 @@
 % [K,gopt,P] = lmiHinfStateFeedbackPolytope_2023(listP,nstate,ncon,percentage,solver)
 % 
 % Description
-% Function that compute the state feedback Hinf controller solving the LMI problem. 
+% Function that computes the state feedback Hinf controller solving the LMI problem. 
 % To use this function one have to create the 
 % generalized plant P such that:
 %  xdot = [   A  Bw  Bu  ]  [x w u]^T
