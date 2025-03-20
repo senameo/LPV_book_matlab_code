@@ -70,3 +70,11 @@ If you use part of this repository useful, please consider citing the book in yo
 ---
 
 
+# Contact
+
+For any discussion, remark, or question, please contact me at:
+
+📧 **olivier.sename@grenoble-inp.fr**
+
+
+
