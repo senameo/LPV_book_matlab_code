@@ -1,9 +1,15 @@
-This directory contains the example 3.4 detailed in section 3.2 o f Chapter 3
-It concerns the Static state feedback control using  a polytopic approach
-%
-Main file: Example34.m
-It contains the modelling definition, control formulation and control solution
-%
-lmiHinfStateFeedbackPolytope.m
-Yalmip/Matlab function that computes a LPV / Hinf state feedback controller solving the LMI problem 
-%
+# Example 3.4 - Static State Feedback Control
+
+This directory contains **Example 3.4**, as detailed in **Section 3.2 of Chapter 3**. It focuses on:
+
+### 📌 Case 4: Static State Feedback Control Using a Polytopic Approach
+
+#### 📂 Main File
+- **`Example34.m`**  
+  *This script includes the modeling definition, control formulation, and control solution.*
+
+#### 🔧 Supporting Function
+- **`lmiHinfStateFeedbackPolytope.m`**  
+  *Yalmip/Matlab function that computes an LPV / H∞ state feedback controller by solving the LMI problem.*
+
+For further details, refer to the book's Chapter 3. 📖

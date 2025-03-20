@@ -1,9 +1,15 @@
-This directory contains the example 3.5 detailed in section 3.2 o f Chapter 3
-It concerns the Static state feedback control using a grid-based approach
-%
-Main file: Example35.m
-It contains the modelling definition, control formulation and control solution
-%
-lmiStateFeedbackGrid.m
-Yalmip/Matlab function that computes a LPV / Hinf state feedback controller solving the LMI problem for a gridded LPV system
-%
+# Example 3.5 - Static State Feedback Control
+
+This directory contains **Example 3.5**, as detailed in **Section 3.2 of Chapter 3**. It focuses on:
+
+### 📌 Case 5: Static State Feedback Control Using a Grid-Based Approach
+
+#### 📂 Main File
+- **`Example35.m`**  
+  *This script includes the modeling definition, control formulation, and control solution.*
+
+#### 🔧 Supporting Function
+- **`lmiStateFeedbackGrid.m`**  
+  *Yalmip/Matlab function that computes an LPV / H∞ state feedback controller by solving the LMI problem for a gridded LPV system.*
+
+For further details, refer to the book's Chapter 3. 📖

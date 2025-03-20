@@ -1,11 +1,18 @@
-This directory contains the example detailed in section 4.3 of Chapter 4
-It concerns the observer design of a non linear system using an Hinf /LPV control approaach, through a polytopic formulation
-%
-Main file: Section43.m
-It contains the modelling definition,and observer design solution
-%
-obs_LPV_pol_poleregion_hinf.m
-Function that computes an LPV polytopic observer with Hinfinity and pole placement constraints (defined as LMI region)
-%
-Simulations_section43.slx
-Simulink files that runs the simulation
+# Example - Observer Design for Nonlinear System
+
+This directory contains the example detailed in **Section 4.3 of Chapter 4**. It focuses on:
+
+### 📌 Case: Observer Design of a Nonlinear System Using an H∞ / LPV Control Approach, Through a Polytopic Formulation
+
+#### 📂 Main File
+- **`Section43.m`**  
+  *This script includes the modeling definition and observer design solution.*
+
+#### 🔧 Supporting Functions
+- **`obs_LPV_pol_poleregion_hinf.m`**  
+  *Function that computes an LPV polytopic observer with H∞ and pole placement constraints (defined as LMI region).*
+
+- **`Simulations_section43.slx`**  
+  *Simulink file that runs the simulation.*
+
+For further details, refer to the book's Chapter 4. 📖
