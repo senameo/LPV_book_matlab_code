@@ -9,8 +9,15 @@ Yalmip/Matlab function that computes the LPV / Hinf controller solving the LMI p
 %  
 Init_simulations_section42.m   
 It allows to run both simulation scenarii shown in section 4.2 of Chapter 4  
+<<<<<<< HEAD
    
 It is imporant to note, that, while this is not detailed in the text , the simulation scenario includes an inout disturbance of magnitude 1,   which acts:
 - at time t=15 sec for case 1  
 - at time t=20 sec for case 2  
   
+=======
+
+It is imporant to note, that, while this is not detailed in the text , the simulation scenario includes an inout disturbance of magnitude 1, which acts:
+- at time t=15 sec for case 1  
+- at time t=20 sec for case 2  
+>>>>>>> e90d836d76777415f79ec9204ce9a5f73c9b42ab
