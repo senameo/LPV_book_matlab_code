@@ -1,4 +1,4 @@
-# Example - Input Filtering and LPV / H∞ Control
+# Example - LPV / $H_\infty$ Control with real-time varying closed-loop performances (using a polytopic approach)
 
 This directory contains Matlab and Simulink files to run the example provided in **Section 7.3 of Chapter 7**. The files to be considered are:
 
