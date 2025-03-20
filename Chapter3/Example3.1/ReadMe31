@@ -1,0 +1,10 @@
+This directory contains the example 3.1 detailed in section 3.2 of Chapter 3
+It concerns Case 1: robust state-feedback control
+%
+Main file: Example31.m
+It contains the modelling definition, control formulation and control solution
+%
+lmiHinfPolytope.m
+Yalmip/Matlab function that computes the LPV / Hinf controller solving the LMI problem 
+lmiHinfStateFeedbackRobust_expstab.m
+% Function that computes a robust state feedback controller for a polytopic system solving an LMI problem. 

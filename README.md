@@ -7,7 +7,7 @@ This book is accompanied by a companion website:
 www.wiley.com/go/sename/lpvcontrol
 The website includes GitHub Repository
 
-It is worth noting that a certain number of generic functiosn can be re-sued for stability analysis, obseerver and control design. To name a few:
+It is worth noting that a certain number of generic functions can be re-sued for stability analysis, obseerver and control design. To name a few:
 
 lmiHinfPolytope.m
 Yalmip/Matlab function that computes the LPV / Hinf controller solving the LMI problem. Build by Charles Poussot-Vassal during his PhD studies at Grenoble/GIPSA-lab
