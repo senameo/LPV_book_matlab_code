@@ -57,7 +57,7 @@ using a Parameter-Dependent Lyapunov Function.
 
 ## 📌 Notes
 
-- These functions are written in **[Matlab](https://www.mathworks.com/products/matlab.html)** and rely on **[YALMIP](https://yalmip.github.io/)** for LMI writing. Solvers such as **[SeDuMi](http://sedumi.mcmaster.ca/)**, **[SDPT3](https://www.mathworks.com/matlabcentral/fileexchange/4547-sdpt3)**, and **[MOSEK](https://www.mosek.com/)** can be used for LMI solving.
+- These functions are written in **[Matlab](https://www.mathworks.com/products/matlab.html)** and rely on **[YALMIP](https://yalmip.github.io/)** for LMI writing. Solvers such as **[SeDuMi](https://sedumi.ie.lehigh.edu/)**, **[SDPT3](https://github.com/sqlp/sdpt3)**, and **[MOSEK](https://www.mosek.com/)** can be used for LMI solving.
 - The provided implementations can be used for research and educational purposes.
 
 ---
