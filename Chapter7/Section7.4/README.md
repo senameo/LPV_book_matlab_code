@@ -1,4 +1,4 @@
-# Example - Flexible System Control
+# Example - Flexible System Control with time-varying load
 
 This directory contains Matlab and Simulink files to run the example provided in **Section 7.4 of Chapter 7**. The files to be considered are:
 
