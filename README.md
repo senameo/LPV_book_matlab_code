@@ -64,4 +64,4 @@ If you find this repository useful, consider citing the book in your work.
 
 ---
 
-📖 *Happy coding & control designing!* 🚀  
+
