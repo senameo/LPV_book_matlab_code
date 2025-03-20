@@ -1,4 +1,4 @@
-# Quasi-LPV Models - Examples and Implementation  
+# LPV adaptive-like control - Examples and Implementation  
 
 This directory contains the code to study the examples of **Chapter 7: Methods and tools for LPV adaptive-like control**.  
 
