@@ -21,11 +21,16 @@ A certain number of generic functions can be reused for stability analysis, obse
 ### 🔹 Stability Analysis
 
 - **`LMI_ParameterDependentStability_grid.m`**  
-  Checks the parameter-dependent stability of an autonomous LPV system:  
-  \[
-  \dot{x} = A(\rho)x
-  \]
-  using a Parameter-Dependent Lyapunov Function.
+  Checks the parameter-dependent stability of an autonomous LPV system given by:
+
+$$\dot{x} = A(\rho)x$$
+
+where:
+- **x** is the state vector,
+- **A(ρ)** is the parameter-dependent system matrix,
+- **ρ** represents the varying parameters.
+
+using a Parameter-Dependent Lyapunov Function.
 
 ---
 
@@ -35,7 +40,7 @@ A certain number of generic functions can be reused for stability analysis, obse
   Computes a robust state feedback controller for a polytopic system by solving an LMI problem.
 
 - **`lmiHinfStateFeedbackPolytope.m`**  
-  YALMIP/Matlab function that computes an **LPV / \( H_\infty \)** state feedback controller by solving an LMI problem.
+  YALMIP/Matlab function that computes an **LPV / $H_\infty$** state feedback controller by solving an LMI problem.
 
 - **`lmiHinfPolytope.m`**  
   YALMIP/Matlab function that computes an **LPV / \( H_\infty \)** controller by solving an LMI problem.  
