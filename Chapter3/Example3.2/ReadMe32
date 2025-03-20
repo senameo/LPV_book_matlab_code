@@ -1,9 +1,16 @@
-This directory contains the example 3.2 detailed in section 3.2 of Chapter 3
-It concerns Case 2: LPV state feedback control with fixed performances
-%
-Main file: Example32.m
-It contains the modelling definition, control formulation and control solution
-%
-LMI_ParameterDependentStability_grid.m
-Function that checks the parameter dependent stability of an autonomous LPV system xdot=A(rho)x using a Parameter Depdendent Lyapunov Function 
-% 
+# Example 3.2 - LPV State Feedback Control with Fixed Performances
+
+This directory contains **Example 3.2**, as detailed in **Section 3.2 of Chapter 3**. It focuses on:
+
+### 📌 Case 2: LPV State Feedback Control with Fixed Performances
+
+#### 📂 Main File
+- **`Example32.m`**  
+  *This script includes the modeling definition, control formulation, and control solution.*
+
+#### 🔧 Supporting Function
+- **`LMI_ParameterDependentStability_grid.m`**  
+  *Checks the parameter-dependent stability of an autonomous LPV system \( \dot{x} = A(\rho)x \) using a Parameter-Dependent Lyapunov Function.*
+
+For further details, refer to the book's Chapter 3. 📖
+
