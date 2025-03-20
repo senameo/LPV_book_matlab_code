@@ -5,7 +5,7 @@ This directory contains **Example 3.1**, as detailed in **Section 3.2 of Chapter
 ### 📌 Case 1: Robust State-Feedback Control
 
 #### 📂 Main File
-- **`Example31.m`**  
+- **`Example3_1.m`**  
   *This script includes the modeling definition, control formulation, and control solution.*
 
 #### 🔧 Supporting Function

@@ -65,7 +65,7 @@ using a Parameter-Dependent Lyapunov Function.
 ## 🔗 References
 
 For more details, please refer to the book and companion website.  
-If you find this repository useful, consider citing the book in your work.  
+If you use part of this repository useful, please consider citing the book in your work.  
 
 ---
 

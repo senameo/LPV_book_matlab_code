@@ -5,7 +5,7 @@ This directory contains **Example 3.2**, as detailed in **Section 3.2 of Chapter
 ### 📌 Case 2: LPV State Feedback Control with Fixed Performances
 
 #### 📂 Main File
-- **`Example32.m`**  
+- **`Example3_2.m`**  
   *This script includes the modeling definition, control formulation, and control solution.*
 
 #### 🔧 Supporting Function
