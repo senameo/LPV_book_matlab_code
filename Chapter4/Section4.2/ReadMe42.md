@@ -1,7 +1,7 @@
 This directory contains the example detailed in section 4.2 of Chapter 4
 It concerns the control of a non linear system using an Hinf /LPV control approaach, through a polytopic formulation
 %
-Main file: Example_secion42.m
+Main file: Section42.m
 It contains the modelling definition, control formulation and control solution
 %
 lmiHinfPolytope.m
