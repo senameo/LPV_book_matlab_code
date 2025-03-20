@@ -43,7 +43,7 @@ using a Parameter-Dependent Lyapunov Function.
   YALMIP/Matlab function that computes an **LPV / $H_\infty$** state feedback controller by solving an LMI problem.
 
 - **`lmiHinfPolytope.m`**  
-  YALMIP/Matlab function that computes an **LPV / \( H_\infty \)** controller by solving an LMI problem.  
+  YALMIP/Matlab function that computes an **LPV / $H_\infty$** controller by solving an LMI problem.  
   Developed by **Charles Poussot-Vassal** during his PhD studies at **Grenoble/GIPSA-lab**.
 
 ---
@@ -51,13 +51,13 @@ using a Parameter-Dependent Lyapunov Function.
 ### 🔹 Observer Design
 
 - **`obs_LPV_pol_poleregion_hinf.m`**  
-  Computes an **LPV polytopic observer** with **\( H_\infty \)** and **pole placement constraints** (defined as an LMI region).
+  Computes an **LPV polytopic observer** with **$H_\infty$** and **pole placement constraints** (defined as an LMI region).
 
 ---
 
 ## 📌 Notes
 
-- These functions are written in **Matlab** and rely on **YALMIP** for solving LMIs.
+- These functions are written in **[Matlab](https://www.mathworks.com/products/matlab.html)** and rely on **[YALMIP](https://yalmip.github.io/)** for LMI writing. Solvers such as **[SeDuMi](http://sedumi.mcmaster.ca/)**, **[SDPT3](https://www.mathworks.com/matlabcentral/fileexchange/4547-sdpt3)**, and **[MOSEK](https://www.mosek.com/)** can be used for LMI solving.
 - The provided implementations can be used for research and educational purposes.
 
 ---
