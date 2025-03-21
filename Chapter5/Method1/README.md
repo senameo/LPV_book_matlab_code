@@ -13,7 +13,7 @@ This directory contains the method detailed in **Section 5.5  of Chapter 5**. It
 
 #### 🔧 Supporting Functions
 - **`obs_LPVpol_pole_h2_hinf.m`**  
-  *Function that computes an LPV polytopic observer with $gH_2$ optimal performance, with $H_\infty$ and pole placement constraints (defined as LMI region).*
+  *Function that computes an LPV polytopic observer with* $gH_2$ *optimal performance, with* $H_\infty$ *and pole placement constraints (defined as LMI region).*
 
 - **`Simulations_chapter5_method1_3scenarios.slx`**  
   *Simulink file that runs the simulation.*
