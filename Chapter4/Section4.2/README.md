@@ -13,7 +13,7 @@ This directory contains the example detailed in **Section 4.2 of Chapter 4**. It
 
 #### 🔧 Supporting Function
 - **`lmiHinfPolytope.m`**  
-  *Yalmip/Matlab function that computes the LPV / $H_\infty$ controller by solving the LMI problem.*
+  *Yalmip/Matlab function that computes the LPV / \(H_\infty\)  controller by solving the LMI problem.*
 
 - **`Simulations_section42.slx`**  
   *Simulink file that runs the simulation.*

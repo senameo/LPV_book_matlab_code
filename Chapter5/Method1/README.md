@@ -9,7 +9,7 @@ This directory contains the method detailed in **Section 5.5  of Chapter 5**. It
   *This script includes the modeling definition and observer design solution.*
 
 - **`Init_simulations_chapter5_method1.m`**  
-  *This function allows running three simulation scenarios: two shown in Section 5.5 of Chapter 5 and one additional one.*
+  *This function allows running three simulation scenarios: two shown in Section 5.5 of Chapter 5 and an additional one (that includes a two-states SkyHook control for the suspension control input).*
 
 #### 🔧 Supporting Functions
 - **`obs_LPVpol_pole_h2_hinf.m`**  
