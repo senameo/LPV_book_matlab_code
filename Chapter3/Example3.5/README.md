@@ -10,6 +10,6 @@ This directory contains **Example 3.5**, as detailed in **Section 3.2 of Chapter
 
 #### 🔧 Supporting Function
 - **`lmiStateFeedbackGrid.m`**  
-  *Yalmip/Matlab function that computes an LPV / * $H_\infty$ *state feedback controller by solving the LMI problem for a gridded LPV system.*
+  *Yalmip/Matlab function that computes an LPV /* $H_\infty$ *state feedback controller by solving the LMI problem for a gridded LPV system.*
 
 For further details, refer to the book's Chapter 3. 📖
