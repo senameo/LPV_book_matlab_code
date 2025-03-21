@@ -10,7 +10,7 @@ This directory contains **Example 3.2**, as detailed in **Section 3.2 of Chapter
 
 #### 🔧 Supporting Function
 - **`LMI_ParameterDependentStability_grid.m`**  
-  *Checks the parameter-dependent stability of an autonomous LPV system*  $ \dot{x} = A(\rho)x$ *using a Parameter-Dependent Lyapunov Function.*
+  *Checks the parameter-dependent stability of an autonomous LPV system*  $\dot{x} = A(\rho)x$ *using a Parameter-Dependent Lyapunov Function.*
 
 For further details, refer to the book's Chapter 3. 📖
 
