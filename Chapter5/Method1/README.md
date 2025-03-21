@@ -17,7 +17,7 @@ This directory contains the method detailed in **Section 5.5  of Chapter 5**. It
   *This function allows running three simulation scenarios: two shown in Section 5.5 of Chapter 5 and one additional one.*
 
 
-- **`Simulations_chapter5_method1.slx`**  
+- **`Simulations_chapter5_method1_3scenarios.slx`**  
   *Simulink file that runs the simulation.*
 
 For further details, refer to the book's Chapter 5. 📖

@@ -4,7 +4,7 @@ This directory contains the code to study the examples of **Chapter 5: Observer 
 
 Three design methods of LPV observer are applied to the estimation of the damper force of a semi-active suspension systems.
 
-- The directory **Method 1** corresponds to the approach detailed in **Section 5.5:** $H_\infty/gH_2$/LPV observer   
+- The directory **Method 1** corresponds to the approach detailed in **Section 5.5:** $H_\infty/gH_2$ LPV observer   
 - The directory **Method 2** corresponds to the  approach detailed in **Section 5.6:**  $H_\infty$/LPV filter  
 - The directory **Method 3** corresponds to the  approach detailed in **Section 5.7:**  a Nonlinear Parameter Varying $H_\infty$ observer  
 
