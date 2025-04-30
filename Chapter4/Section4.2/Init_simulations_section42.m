@@ -41,7 +41,8 @@ plot(poly_coord.time,poly_coord.signals.values),title('polytopic coordoinates')
 
     case 2
 x0=[pi/2;-1];
-LTIcontoller=KLTI1;
+xk0=[0;0;0;0];
+LTIcontoller=KLTI2;
 ueq=-x0(1)*x0(2);
 % diturbance time action
 time_dist=20;
