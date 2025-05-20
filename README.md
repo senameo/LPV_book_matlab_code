@@ -2,7 +2,7 @@
 
 This repository contains examples from the book:  
 **Linear Parameter-Varying Control: Theory and Application to Automotive Systems**  
-Published by **John Wiley & Sons, Inc., Hoboken, New Jersey, August 2025**
+Published by **John Wiley & Sons, Inc., Hoboken, New Jersey, April 2025**
 **ISBN:** 978-1-394-28595-2  
 
 ## Companion Website
